@@ -21,7 +21,7 @@
     "vitest": "^3.2.4"
   },
   "lint-staged": {
-    "*.js": "prettier . --write",
+    "*.js": "prettier --write .",
     "**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "oxlint --fix"
   }
 }
