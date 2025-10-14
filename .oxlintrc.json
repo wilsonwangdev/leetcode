@@ -6,7 +6,8 @@
     "restriction": "error"
   },
   "rules": {
-    "no-plusplus": "allow"
+    "no-plusplus": "allow",
+    "no-param-reassign": "allow"
   },
   "ignorePatterns": [
     "node_modules",
