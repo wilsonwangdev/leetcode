@@ -13,7 +13,11 @@
     "@vitest/ui": "3.2.4",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.4",
+    "oxlint": "^1.23.0",
     "prettier": "^3.6.2",
     "vitest": "^3.2.4"
+  },
+  "lint-staged": {
+    "**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "oxlint"
   }
 }
