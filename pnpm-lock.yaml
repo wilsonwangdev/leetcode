@@ -18,6 +18,12 @@ importers:
         specifier: ^3.2.4
         version: 3.2.4(@vitest/ui@3.2.4)
 
+  html:
+    dependencies:
+      vite:
+        specifier: ^7.1.10
+        version: 7.1.10
+
 packages:
 
   '@ampproject/remapping@2.3.0':

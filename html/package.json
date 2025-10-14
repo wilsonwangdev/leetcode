@@ -1,0 +1,13 @@
+{
+  "name": "@wilsonwangdev/leetcode-report",
+  "version": "1.0.0",
+  "description": "Leetcode Report",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "^7.1.10"
+  }
+}
