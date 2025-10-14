@@ -11,7 +11,7 @@
  * @param {number[][]} matrix
  * @return {number[]}
  */
-export var spiralOrder = function (matrix) {
+export const spiralOrder = function (matrix) {
   let rowStart = 0,
     rowEnd = matrix.length - 1,
     colStart = 0,

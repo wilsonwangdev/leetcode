@@ -11,7 +11,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-export var minPathSum = function (grid) {
+export const minPathSum = function (grid) {
   let m = grid.length,
     n = grid[0].length;
   let dp = Array(m)
