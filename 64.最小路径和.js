@@ -11,7 +11,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-export const minPathSum = function (grid) {
+const minPathSum = function (grid) {
   let m = grid.length,
     n = grid[0].length;
   let dp = Array(m)
@@ -43,3 +43,5 @@ export const minPathSum = function (grid) {
 // @lcpr case=end
 
  */
+
+export { minPathSum };
