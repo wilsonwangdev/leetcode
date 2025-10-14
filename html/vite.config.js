@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: "leetcode"
+  base: '/leetcode/',
+  publicDir: '.',
 })
