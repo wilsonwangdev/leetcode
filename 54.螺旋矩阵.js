@@ -58,5 +58,4 @@ const spiralOrder = function (matrix) {
 
  */
 
-export { spiralOrder }
-
+export { spiralOrder };
