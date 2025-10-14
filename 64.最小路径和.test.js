@@ -15,18 +15,40 @@ describe('minPathSum', () => {
   });
 
   it('should find minimum path sum in 3x3 grid', () => {
-    expect(minPathSum([[1, 3, 1], [1, 5, 1], [4, 2, 1]])).toBe(7);
+    expect(
+      minPathSum([
+        [1, 3, 1],
+        [1, 5, 1],
+        [4, 2, 1],
+      ])
+    ).toBe(7);
   });
 
   it('should find minimum path sum in 2x3 grid', () => {
-    expect(minPathSum([[1, 2, 3], [4, 5, 6]])).toBe(12);
+    expect(
+      minPathSum([
+        [1, 2, 3],
+        [4, 5, 6],
+      ])
+    ).toBe(12);
   });
 
   it('should handle grid with larger values', () => {
-    expect(minPathSum([[1, 4, 8], [3, 7, 2], [2, 1, 5]])).toBe(12);
+    expect(
+      minPathSum([
+        [1, 4, 8],
+        [3, 7, 2],
+        [2, 1, 5],
+      ])
+    ).toBe(12);
   });
 
   it('should handle 2x2 grid', () => {
-    expect(minPathSum([[1, 2], [3, 4]])).toBe(7);
+    expect(
+      minPathSum([
+        [1, 2],
+        [3, 4],
+      ])
+    ).toBe(7);
   });
 });

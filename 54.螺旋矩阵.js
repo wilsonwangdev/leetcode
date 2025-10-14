@@ -11,36 +11,37 @@
  * @param {number[][]} matrix
  * @return {number[]}
  */
-export var spiralOrder = function(matrix) {
-    let rowStart = 0,  rowEnd = matrix.length - 1, colStart = 0, colEnd = matrix[0].length - 1;
-    let res = [];
-    while (rowStart <= rowEnd && colStart <= colEnd) {
-        for (let col = colStart; col <= colEnd; col++) {
-            res.push(matrix[rowStart][col]);
-        }
-        rowStart++;
-        for (let row = rowStart; row <= rowEnd; row++) {
-            res.push(matrix[row][colEnd]);
-        }
-        colEnd--;
-        if (rowStart <= rowEnd) {
-            for (let col = colEnd; col >= colStart; col--) {
-                res.push(matrix[rowEnd][col]);
-            }
-            rowEnd--;
-        }
-        if (colStart <= colEnd) {
-            for (let row = rowEnd; row >= rowStart; row--) {
-                res.push(matrix[row][colStart]);
-            }
-            colStart++;
-        }
+export var spiralOrder = function (matrix) {
+  let rowStart = 0,
+    rowEnd = matrix.length - 1,
+    colStart = 0,
+    colEnd = matrix[0].length - 1;
+  let res = [];
+  while (rowStart <= rowEnd && colStart <= colEnd) {
+    for (let col = colStart; col <= colEnd; col++) {
+      res.push(matrix[rowStart][col]);
     }
-    return res;
+    rowStart++;
+    for (let row = rowStart; row <= rowEnd; row++) {
+      res.push(matrix[row][colEnd]);
+    }
+    colEnd--;
+    if (rowStart <= rowEnd) {
+      for (let col = colEnd; col >= colStart; col--) {
+        res.push(matrix[rowEnd][col]);
+      }
+      rowEnd--;
+    }
+    if (colStart <= colEnd) {
+      for (let row = rowEnd; row >= rowStart; row--) {
+        res.push(matrix[row][colStart]);
+      }
+      colStart++;
+    }
+  }
+  return res;
 };
 // @lc code=end
-
-
 
 /*
 // @lcpr case=start
@@ -56,4 +57,3 @@ export var spiralOrder = function(matrix) {
 // @lcpr case=end
 
  */
-
